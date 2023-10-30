@@ -1,10 +1,16 @@
 import { useState } from 'react'
 import './App.css'
+import ScoreBoardRender from './ScoreBoardRender'
 
 function App() {
+
+
+
   return (
     <>
-      Testing
+      <div className = 'App'>
+        <ScoreBoardRender />
+      </div>
     </>
   )
 }
