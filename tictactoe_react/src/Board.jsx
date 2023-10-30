@@ -1,6 +1,6 @@
 import CellSquare from "./CellSquare";
 
-function BoardRender() {
+function Board() {
 
     // const [cellData, setCellData] = useState(null);
 
@@ -20,4 +20,4 @@ function BoardRender() {
     )
 }
 
-export default BoardRender
+export default Board

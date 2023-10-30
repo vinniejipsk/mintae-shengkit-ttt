@@ -1,13 +1,20 @@
 import { useState } from 'react'
 import './App.css'
-import BoardRender from './BoardRender'
+import Board from './Board'
+import GameOverMsg from './GameOverMsg';
+import PlayAgainButton from './PlayAgainButton';
 
 function App() {
+  const [gameOver, setGameOver] = useState(false);
 
   return (
     <>
       <div>
-        <BoardRender />
+        <Board />
+        {/* {gameOver ? <GameOverMsg /> : null}
+        {gameOver ? <PlayAgainButton /> : null} */}
+        <GameOverMsg />
+        <PlayAgainButton />
       </div>
     </>
   )
