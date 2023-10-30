@@ -4,11 +4,9 @@ import BoardRender from './BoardRender'
 
 function App() {
 
-
-
   return (
     <>
-      <div className = 'App'>
+      <div>
         <BoardRender />
       </div>
     </>
