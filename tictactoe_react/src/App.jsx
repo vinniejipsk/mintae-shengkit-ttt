@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import ScoreBoardRender from './ScoreBoardRender'
+import BoardRender from './BoardRender'
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <div className = 'App'>
-        <ScoreBoardRender />
+        <BoardRender />
       </div>
     </>
   )
