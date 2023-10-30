@@ -1,5 +1,3 @@
-import "./BoardRender.css";
-
 function BoardRender() {
 
 return (
