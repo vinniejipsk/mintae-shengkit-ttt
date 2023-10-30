@@ -3,6 +3,7 @@ import './App.css'
 import Board from './Board'
 import GameOverMsg from './GameOverMsg';
 import PlayAgainButton from './PlayAgainButton';
+import ScoreBoard from './ScoreBoard';
 
 function App() {
   const [gameOver, setGameOver] = useState(false);
@@ -10,6 +11,7 @@ function App() {
   return (
     <>
       <div>
+        <ScoreBoard />
         <Board />
         {/* {gameOver ? <GameOverMsg /> : null}
         {gameOver ? <PlayAgainButton /> : null} */}
