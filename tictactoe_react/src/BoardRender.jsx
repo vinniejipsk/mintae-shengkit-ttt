@@ -1,19 +1,23 @@
+import CellSquare from "./CellSquare";
+
 function BoardRender() {
 
-return (
-    <div className="board">
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-    </div>
-    // Will use a forloop or smth to create 9 cells? 
-)
+    // const [cellData, setCellData] = useState(null);
+
+    return (
+        <div className="board">
+            <CellSquare />
+            <CellSquare />
+            <CellSquare />
+            <CellSquare />
+            <CellSquare />
+            <CellSquare />
+            <CellSquare />
+            <CellSquare />
+            <CellSquare />
+        </div>
+        // will do a autofill to 9 cells.
+    )
 }
 
 export default BoardRender
