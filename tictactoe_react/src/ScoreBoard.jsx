@@ -6,8 +6,8 @@ function ScoreBoard() {
     const [winCount2, setWincount2] = useState(2);
   return (
     <div className='scoreBoard'>
-        `Player 1 : Player 2
-        ${winCount1} : ${winCount2}`
+        <div>Player 1 : Player 2</div>
+        <div>{winCount1} : {winCount2}</div>
     </div>
   )
 }

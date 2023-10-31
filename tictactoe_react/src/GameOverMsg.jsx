@@ -4,7 +4,7 @@ function GameOverMsg({winner}) {
 
   return (
     <div>
-        `Player ${winner} won!`
+        Player {winner} won!
     </div>
   )
 }
