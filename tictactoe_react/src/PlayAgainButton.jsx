@@ -4,6 +4,7 @@ function PlayAgainButton() {
 
     function resetGame() {
         // reset all state variables to intital values
+        
     }
 
   return (
