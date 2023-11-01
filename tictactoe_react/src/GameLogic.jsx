@@ -14,6 +14,7 @@ function GameLogic() {
     const colorName = {
         '1': 'purple',
         '-1': 'orange',
+        'null': 'white'
     }; 
     
     let board = Array(9).fill(null); 
