@@ -13,6 +13,8 @@ function App() {
       <div>
         <ScoreBoard />
         <Board />
+        {/* {gameOver ? <GameMsg /> : null}
+        {gameOver ? <PlayAgainButton /> : null} */}
         <GameMsg />
         <PlayAgainButton />
       </div>
