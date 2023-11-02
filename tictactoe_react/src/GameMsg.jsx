@@ -1,20 +1,22 @@
 import React from 'react'
 
-function GameMsg({winner}) {
+function GameMsg({winner, turn}) {
 
   function renderMessage() {
     if (winner === 'T') {
-          message.innerHTML = 'TIE! Play Again!';
+          return 'TIE! Play Again!';
       } else if (winner) {
-          message.innerHTML = `${[winner]}, You're The Winner!`;
+          return `${winner}, You're The Winner!`;
       } else {
-          message.innerHTML = `It's ${[turn]}'s Turn`;
+          return `It's ${turn}'s Turn`;
       }
   }
 
+  const message = renderMessage();
+
   return (
     <div>
-        {renderMessage}
+        {message}
     </div>
   )
 }
