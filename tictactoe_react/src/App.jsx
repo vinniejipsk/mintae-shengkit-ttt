@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Board from './Board'
-import GameOverMsg from './GameOverMsg';
+import GameMsg from './GameMsg';
 import PlayAgainButton from './PlayAgainButton';
 import ScoreBoard from './ScoreBoard';
 
@@ -13,10 +13,7 @@ function App() {
       <div>
         <ScoreBoard />
         <Board />
-
-        {/* {gameOver ? <GameOverMsg /> : null}
-        {gameOver ? <PlayAgainButton /> : null} */}
-        <GameOverMsg />
+        <GameMsg />
         <PlayAgainButton />
       </div>
     </>
