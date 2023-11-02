@@ -61,15 +61,15 @@ function GameLogic() {
         }
     }
     
-    // function renderMessage() {
-    //     if (winner === 'T') {
-    //         message.innerHTML = 'TIE! Play Again!';
-    //     } else if (winner) {
-    //         message.innerHTML = `<span style="color: ${colorName[winner]}">${colorName[winner].toUpperCase()}</span>, You're The Winner!`;
-    //     } else {
-    //         message.innerHTML = `It's <span style="color: ${colorName[turn]}">${colorName[turn].toUpperCase()}</span>'s Turn`;
-    //     }
-    // } USE IT FOR GameOverRender.jsx?!!!!!
+    function renderMessage() {
+        if (winner === 'T') {
+            message.innerHTML = 'TIE! Play Again!';
+        } else if (winner) {
+            message.innerHTML = `<span style="color: ${colorName[winner]}">${colorName[winner].toUpperCase()}</span>, You're The Winner!`;
+        } else {
+            message.innerHTML = `It's <span style="color: ${colorName[turn]}">${colorName[turn].toUpperCase()}</span>'s Turn`;
+        }
+    } USE IT FOR GameOverRender.jsx?!!!!!
     
     // cells.forEach((cell, index) => {
     //     cell.addEventListener('click', () => {
