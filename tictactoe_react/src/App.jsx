@@ -25,7 +25,9 @@ function App() {
         setTurn={setTurn}
         winner={winner}
         handleWin={handleWin}
-      />
+        />
+        {/* {gameOver ? <GameMsg /> : null}
+        {gameOver ? <PlayAgainButton /> : null} */}
       {/* <PlayAgainButton /> */}
     </div>
   );
