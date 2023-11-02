@@ -1,13 +1,8 @@
 import { useState } from "react";
 import CellSquare from "./CellSquare";
 
-function Board() {
-
-    const [board, setBoard] = useState(Array(9).fill(null));
-    const [turn, setTurn] = useState({
-        player1: true,
-        player2: false
-      })
+function Board({ turn, setTurn, board, setBoard, checkWinner }) {
+    
 
     return (
         <div className="board">
@@ -17,6 +12,9 @@ function Board() {
                 value={cell}
                 turn={turn}
                 setTurn={setTurn}
+                board={board}
+                setBoard={setBoard}
+                checkWinner={checkWinner}
                 />
             ))}
         </div>
