@@ -4,7 +4,9 @@ function CellSquare({ turn, setTurn }) {
 
     const [value, setValue] = useState(null);
 
-    function handleClick() {
+    function handleClick(e) {
+        const selectedCell = e.target;
+        if (value !== null) return;
         if (turn.player1) {
             setValue('X');
             setTurn({player1: !turn.player1, player2: !turn.player2});
@@ -12,6 +14,8 @@ function CellSquare({ turn, setTurn }) {
             setValue('O');
             setTurn({player1: !turn.player1, player2: !turn.player2});
         }
+
+
     }
 
     return (
