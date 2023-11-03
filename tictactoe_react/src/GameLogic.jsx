@@ -69,7 +69,7 @@ function GameLogic() {
         } else {
             message.innerHTML = `It's <span style="color: ${colorName[turn]}">${colorName[turn].toUpperCase()}</span>'s Turn`;
         }
-    } USE IT FOR GameOverRender.jsx?!!!!!
+    }
     
     // cells.forEach((cell, index) => {
     //     cell.addEventListener('click', () => {

@@ -1,21 +1,12 @@
-import React from 'react'
+import React from 'react';
 
 function PlayAgainButton() {
-
-    function resetGame() {
-        // reset all state variables to intital values
-        
-    }
-
   return (
-    <div>
-      <button 
-        className='playAgainBtn'
-        onClick={resetGame}
-      >PLAY AGAIN
-      </button>
-    </div>
-  )
+    <button className="playAgainBtn" onClick={resetGame}>
+      Play Again
+    </button>
+  );
 }
 
-export default PlayAgainButton
+export default PlayAgainButton;
+
