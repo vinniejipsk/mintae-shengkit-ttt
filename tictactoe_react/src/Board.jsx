@@ -2,7 +2,7 @@ import React from 'react';
 import CellSquare from './CellSquare';
 import GameMsg from './GameMsg';
 
-function Board({ board, setBoard, turn, setTurn, winner, handleWin }) {
+function Board({ board, setBoard, turn, setTurn, winner, handleWin, setGameOver }) {
 
   const handleClick = (index) => {
     
@@ -26,12 +26,14 @@ function Board({ board, setBoard, turn, setTurn, winner, handleWin }) {
       const [a, b, c] = combo;
       if (newBoard[a] && newBoard[a] === newBoard[b] && newBoard[a] === newBoard[c]) {
         handleWin(currentTurn);
+        setGameOver(true);
         return;
       }
     }
 
     if (!newBoard.includes(null)) {
       handleWin('T'); // T for Tie
+      setGameOver(true);
     }
   };
 
