@@ -9,6 +9,7 @@ function App() {
   const [turn, setTurn] = useState('X');
   const [winner, setWinner] = useState(null);
   const [score, setScore] = useState({ X: 0, O: 0 });
+  const [gameOver, setGameOver] = useState(false);
 
   const handleWin = (player) => {
     setWinner(player);
@@ -17,7 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* <ScoreBoard /> */}
+      <ScoreBoard score={score} />
       <Board
         board={board}
         setBoard={setBoard}
@@ -25,10 +26,18 @@ function App() {
         setTurn={setTurn}
         winner={winner}
         handleWin={handleWin}
-        />
-        {/* {gameOver ? <GameMsg /> : null}
-        {gameOver ? <PlayAgainButton /> : null} */}
-      {/* <PlayAgainButton /> */}
+        setGameOver={setGameOver}
+      />
+      
+      {gameOver ? 
+        <PlayAgainButton 
+          setBoard={setBoard}
+          setTurn={setTurn}
+          setWinner={setWinner}
+          setScore={setScore}
+          setGameOver={setGameOver}
+          /> 
+          : null}
     </div>
   );
 }
